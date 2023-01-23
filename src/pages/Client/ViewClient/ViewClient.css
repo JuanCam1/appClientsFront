@@ -1,0 +1,39 @@
+.viewClient {
+  height: 80vh;
+  width: 100%;
+  background-color: white;
+  transition: all 0.8s ease;
+  display: grid;
+  place-content: center;
+}
+
+
+.viewClient > div {
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+  width: 80vw;
+}
+
+.viewClient h3:not(.note) {
+  display: flex;
+  gap: .5rem;
+  justify-content: flex-start;
+}
+
+
+.viewClient button {
+  margin-top: 1rem;
+  border: none;
+  background-color: #1a337d;
+  color: white;
+  padding: .5rem;
+  text-transform: capitalize;
+  font-size: 1em;
+  cursor: pointer;
+  width: 40%;
+}
+
+.viewClient span {
+  font-weight: 400;
+}

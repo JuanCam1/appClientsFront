@@ -1,0 +1,185 @@
+.listClients {
+  padding: 1rem 0.5rem;
+  position: relative;
+  text-align: center;
+}
+
+.listTitle {
+  color: #1a337d;
+  font-weight: 900;
+  margin-bottom: 0.8rem;
+  pointer-events: none;
+  font-size: 2rem;
+}
+
+.listClients span {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 1200px;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: 0.5em 0 0.75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 0.35em;
+}
+
+table th,
+table td {
+  padding: 0.625em;
+  text-align: center;
+}
+
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.textCap {
+  text-transform: capitalize;
+}
+
+.listTable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+table button {
+  cursor: pointer;
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+table .ver {
+  background-color: #f1930e;
+}
+
+table .edit {
+  background-color: #2059e7;
+}
+table .del {
+  background-color: #d62220;
+}
+
+.toastAlert {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  table {
+    border: 0;
+  }
+
+  .listTitle {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+
+  .listClients {
+    position: relative;
+  }
+
+  .listClients span {
+    font-size: 1rem;
+    margin-left: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625em;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8em;
+    text-align: right;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+  }
+
+  table button {
+    border: none;
+    padding: 4px 8px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .toastAlert {
+    border: 1px solid #cecece;
+    padding: 1rem;
+    display: block;
+    position: fixed;
+    z-index: 2;
+    bottom: 50px;
+    transition: all 0.3s ease;
+    background-color: white;
+    transform: translateY(150px);
+  }
+
+  .toastAlert button {
+    background-color: #d62220;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+
+  .toastTransi {
+    transform: translateY(0px);
+  }
+
+}

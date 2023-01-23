@@ -1,0 +1,91 @@
+.aggClient {
+  padding: 1rem;
+  position: relative;
+}
+
+.aggTitle {
+  color: #1a337d;
+  font-weight: 900;
+  margin-bottom: 0.8rem;
+  pointer-events: none;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.aggClient span {
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.aggForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.aggCampo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.aggForm input[type='text'],
+.aggForm input[type='email'] {
+  height: 30px;
+}
+
+.aggCampo textarea,input {
+  border: 1px solid #cecece;
+  border-radius: 5px;
+}
+
+.aggCampo textarea {
+  resize: none;
+  height: 60px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.aggCampo input:focus, textarea:focus {
+  outline: none;
+  border: 1px solid #3c5cbb;
+}
+
+.aggButton {
+  background-color: #1a337d;
+  border: none;
+  padding: .8rem;
+  color: white;
+  font-size: .9rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .aggClient {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+  }
+
+  .aggForm {
+    max-width: 900px;
+    width: 100%;
+  }
+
+  .aggCampo textarea {
+    height: 100px;
+  }
+
+  .containerButton{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .aggButton {
+    width: 20%;
+  }
+  
+  
+}

@@ -1,0 +1,38 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  background-color: #1a337d;
+  padding: 0.5rem 0;
+  height: auto;
+}
+
+.navTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.navOption ol {
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navOption ul {
+  padding: 0.5rem;
+  padding-bottom: 0;
+}
+
+.nav a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.nav a.is-active {
+  color:#719edd;
+  pointer-events: none;
+  border-bottom: 2px solid #719edd;
+}
